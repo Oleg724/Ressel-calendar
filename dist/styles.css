@@ -39,7 +39,7 @@ body {
 
 .section__ad-ticket-wrapper--right-bottom {
   position: absolute;
-  right: -10%;
+  right: -8%;
   bottom: -68%;
   -webkit-transform: rotate(18deg);
   -ms-transform: rotate(18deg);
@@ -151,7 +151,7 @@ body {
   }
   .section__ad-ticket-wrapper--right-bottom {
     position: absolute;
-    right: -10%;
+    right: -2%;
     bottom: -44%;
     -webkit-transform: rotate(18deg);
     -ms-transform: rotate(18deg);
@@ -384,7 +384,7 @@ body {
 
 .main-grid {
   display: grid;
-  grid-template-columns: 0 48% 10% 21% 21% 0;
+  grid-template-columns: 0% 48% 10% 21% 21% 0%;
   grid-template-rows: 15vw 15vw;
   color: #ffffff;
   position: relative;
@@ -664,6 +664,10 @@ body {
   position: relative;
 }
 
+.image-block__img--width-100 {
+  width: 100%;
+}
+
 .image-block__img--absolute {
   position: absolute;
   bottom: -43px;
@@ -677,9 +681,18 @@ body {
 }
 
 @media screen and (max-width: 920px) {
+  .image-block__img--width-100 {
+    width: 70%;
+  }
   .image-block__img--absolute {
     bottom: -98px;
+    right: 0px;
+    width: 50%;
   }
+}
+
+.block-image__img {
+  width: 100%;
 }
 
 .ad-ticket {

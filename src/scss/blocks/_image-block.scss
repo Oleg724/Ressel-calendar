@@ -3,6 +3,10 @@
 
   &__img {
 
+    &--width-100 {
+      width: 100%;
+    }
+
     &--absolute {
       position: absolute;
       bottom: -43px;
@@ -20,8 +24,14 @@
 @media screen and (max-width: 920px) {
   .image-block {
     &__img {
+      &--width-100 {
+        width: 70%;
+      }
+
       &--absolute {
         bottom: -98px;
+        right: 0px;
+        width: 50%;
       }
     }
   }
