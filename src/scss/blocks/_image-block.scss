@@ -1,0 +1,28 @@
+.image-block {
+  position: relative;
+
+  &__img {
+
+    &--absolute {
+      position: absolute;
+      bottom: -43px;
+      right: -126px;
+      z-index: -1;
+    }
+
+    &--box-shadow {
+      border-radius: 15px;
+      box-shadow: 14px 11px 18px 6px rgba(181, 208, 244, 0.75);
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .image-block {
+    &__img {
+      &--absolute {
+        bottom: -98px;
+      }
+    }
+  }
+}

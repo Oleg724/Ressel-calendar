@@ -10,6 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   color: #0C1742;
+  background-color: #f5f6fb;
 }
 
 @import "_layout";
@@ -24,7 +25,21 @@ body {
 
 @font-face {
   font-family: "PoppinsMedium";
-  src: url("./dist/fonts/Poppins-Medium.ttf") format("truetype");
+  src: url("./fonts/Poppins-Medium.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
+}
+
+@font-face {
+  font-family: "PoppinsBold";
+  src: url("./fonts/Poppins-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "PoppinsSemibold";
+  src: url("./fonts/SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
 }

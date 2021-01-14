@@ -5,28 +5,152 @@
 .section {
   width: 100%;
 
+  &__btn-wrapper {
+    padding: 40px;
+  }
+
+  &__ad-ticket-wrapper {
+
+    &--left-top {
+      position: absolute;
+      left: -13%;
+      top: -52%;
+      transform: rotate(-9deg);
+    }
+
+    &--right-bottom {
+      position: absolute;
+      right: -10%;
+      bottom: -68%;
+      transform: rotate(18deg);
+    }
+  }
+
   &__inner {
     width: 100%;
     max-width: 1020px;
     margin: 0 auto;
-    height: 100%;
+
+    &--border {
+      border-radius: 16px;
+      border: 2px solid #9ca6be;
+      padding: 65px 70px;
+    }
+
+    &--center {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &--width-initial {
+      width: initial;
+    }
+
+    &--row {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &--right-top {
+      position: absolute;
+      right: 18%;
+      top: -6%;
+      transform: rotate(-9deg);
+      z-index: 2;
+    }
+
+    &--wrap {
+      flex-wrap: wrap;
+    }
+    
+    &--position-relative {
+      position: relative;
+    }
+  }
+
+  &__item {
+    padding-top: 200px;
+  }
+
+  &--padding-bottom {
+    padding-bottom: 200px;
   }
 
   &--padding-top {
-    padding-top: 40px;
+    padding-top: 100px;
+    margin-top: -3px;
+  }
+
+  &__position-relative {
+    position: relative;
   }
 
   &--oval {
-    background-color: #0B1643;
-    height: 100vh;
-    max-height: 826px;
-    clip-path: polygon(0 calc(100% - 100px), 100% calc(100% - 100px), 100% 0%, 0% 0%);
-    border-radius: 0 0 50% 50%;
+    background-image: url('./images/bg.png');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: calc(100vh - 170px);
+  }
+
+  &__title {
+    font-family: PoppinsBold, sans-serif;
+    font-size: 50px;
+
+    &--max-width {
+      max-width: 358px;
+      font-size: 34px;
+    }
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .section {
-    padding: 40px 10% 0 10%;
+    padding: 40px 10% 200px 10%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .section {
+    &__ad-ticket-wrapper {
+
+      &--left-top {
+        position: absolute;
+        left: -13%;
+        top: -39%;
+        transform: rotate(-9deg);
+      }
+
+      &--right-bottom {
+        position: absolute;
+        right: -10%;
+        bottom: -44%;
+        transform: rotate(18deg);
+      }
+    }
+
+    &__inner {
+
+      &--border {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      &--column {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+
+    &__title {
+      flex-direction: column;
+      &--max-width {
+        font-size: 28px;
+      }
+    }
   }
 }

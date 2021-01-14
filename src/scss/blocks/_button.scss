@@ -4,4 +4,14 @@
   background-color: #fff;
   border: none;
   border-radius: 8px;
+  color: #017ffa;
+  font-family: "PoppinsMedium", sans-serif;
+  font-size: 16px;
+  
+  &:hover {
+    transition: all .3s ease;
+    background-color: #697697;
+    color: #ffffff;
+    cursor: pointer;
+  }
 }

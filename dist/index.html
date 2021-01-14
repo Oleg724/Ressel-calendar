@@ -10,11 +10,14 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__inner">
+        <div class="header__inner menu">
+            <input class="menu__toggle" id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
             <div class="header__item">
                 <img class="header__img" src="./images/rc.png" alt="rc logo"/>
             </div>
-
             <ul class="header__item list">
                 <li class="list__item">
                     <a href="#">Home</a>
@@ -22,10 +25,11 @@
                 <li class="list__item">
                     <a href="#">Payouts</a>
                 </li>
-                <li class="list__item">
-                    <button class="list__btn btn">Submit Tip</button>
-                </li>
+
             </ul>
+            <div class="header__item">
+                <button class="list__btn btn">Submit Tip</button>
+            </div>
         </div>
     </header>
     <main>
@@ -53,21 +57,184 @@
                     </div>
                     <div class="main-grid__item">
                         <div class="main-grid__inner main-grid__inner--position-bottom">
-                            <img class="main-grid__image" src="./images/exclamation.png" alt="exclamation mark">
+                            <img class="main-grid__image" src="./images/exclamation.png" alt="exclamation mark"/>
                         </div>
                     </div>
                     <div class="main-grid__item">
                         <div class="main-grid__inner main-grid__inner--position-initial">
-                            <h3 class="main-grid__subtitle main-grid__subtitle--blue">$250,000</h3>
+                            <img class="main-grid__image" src="./images/number.png" alt="250 000 dollars"/>
+                        </div>
+                    </div>
+                    <div class="main-grid__item">
+                        <div class="main-grid__inner main-grid__inner--lg">
+                            <img class="main-grid__image" src="./images/light-circle.png" alt="circle light"/>
+                        </div>
+                    </div>
+                    <div class="main-grid__item">
+                        <div class="main-grid__inner main-grid__inner--lg main-grid__inner--position-bottom-right">
+                            <img class="main-grid__image" src="./images/light-circle.png" alt="circle light"/>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
+        <section class="section section--padding-bottom section__position-relative">
+            <div class="section__inner section__inner--width-initial section__inner--right-top">
+                <div class="ad-ticket">
+                    <div class="ad-ticket__img-wrapper">
+                        <img src="./images/ps.png" alt="play station 5" class="ad-ticket__img">
+                    </div>
+                    <div class="ad-ticket__inner">
+                        <p class="ad-ticket__title">PlayStation 5</p>
+                    </div>
+                    <div class="ad-ticket__inner">
+                        <div class="ad-ticket__services">
+                            <div class="ad-ticket__price">$200</div>
+                            <div class="ad-ticket__description">Retail</div>
+                        </div>
+                        <div class="ad-ticket__services">
+                            <div class="ad-ticket__price">$500+</div>
+                            <div class="ad-ticket__description">Resale</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section__inner section__inner--row section__inner--wrap">
+                <div class="section__item block-image">
+                    <img src="./images/group-ebay.png" alt="" class="block-image__img">
+                </div>
+                <div class="section__item block-title">
+                    <div class="block-title__inner">
+                        <h1 class="block-title__title">
+                            Know about a hyped item release that you think will
+                            be a profitable flip on eBay?
+                        </h1>
+                    </div>
+                    <p class="block-title__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud
+                    </p>
+                </div>
+                <div class="section__item block-title">
+                    <div class="block-title__inner">
+                        <img src="./images/price.png" alt="confirm"
+                            class="block-title__img block-title__img--margin"/>
+                        <h1 class="block-title__title">
+                            A Price Mistake?
+                        </h1>
+                    </div>
+                    <p class="block-title__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis
+                    </p>
+                </div>
+                <div class="section__item block-title">
+                    <div class="block-title__inner">
+                        <img src="./images/discount.png" alt="confirm"
+                             class="block-title__img block-title__img--margin"/>
+                        <h1 class="block-title__title">
+                            An Insane Discount?
+                        </h1>
+                    </div>
+                    <p class="block-title__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section section--padding-bottom section__position-relative">
+            <div class="section__inner section__inner--row section__inner--border section__inner--position-relative">
+                <div class="section__ad-ticket-wrapper section__ad-ticket-wrapper--left-top">
+                    <div class="ad-ticket">
+                        <div class="ad-ticket__img-wrapper">
+                            <img src="./images/ps.png" alt="play station 5" class="ad-ticket__img">
+                        </div>
+                        <div class="ad-ticket__inner">
+                            <p class="ad-ticket__title">PlayStation 5</p>
+                        </div>
+                        <div class="ad-ticket__inner">
+                            <div class="ad-ticket__services">
+                                <div class="ad-ticket__price">$200</div>
+                                <div class="ad-ticket__description">Retail</div>
+                            </div>
+                            <div class="ad-ticket__services">
+                                <div class="ad-ticket__price">$500+</div>
+                                <div class="ad-ticket__description">Resale</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="section__title section__title--max-width">
+                    Anything profitable for resellers and hustlers right now?
+                </h1>
+                <div class="section__btn-wrapper">
+                    <button class="btn-blue">Submit Tip</button>
+                </div>
+                <div class="section__ad-ticket-wrapper section__ad-ticket-wrapper--right-bottom">
+                    <div class="ad-ticket">
+                        <div class="ad-ticket__img-wrapper">
+                            <img src="./images/ps.png" alt="play station 5" class="ad-ticket__img">
+                        </div>
+                        <div class="ad-ticket__inner">
+                            <p class="ad-ticket__title">PlayStation 5</p>
+                        </div>
+                        <div class="ad-ticket__inner">
+                            <div class="ad-ticket__services">
+                                <div class="ad-ticket__price">$200</div>
+                                <div class="ad-ticket__description">Retail</div>
+                            </div>
+                            <div class="ad-ticket__services">
+                                <div class="ad-ticket__price">$500+</div>
+                                <div class="ad-ticket__description">Resale</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--padding-bottom">
+            <div class="section__inner section__inner--row section__inner--column">
+                <div class="section__item image-block">
+                    <img src="./images/card.png" alt="card" class="image-block__img image-block__img--box-shadow">
+                    <img src="./images/verified.png" alt="verified protection sign"
+                         class="image-block__img image-block__img--absolute">
+                </div>
+                <div class="section__item block-title">
+                    <div class="block-title__inner block-title__inner--row">
+                        <img src="./images/confirm.png" alt="confirm"
+                             class="block-title__img block-title__img--box-shadow-none block-title__img--padding-top"/>
+                        <h1 class="block-title__title">
+                            <span>Agree on a price</span> beforehand. Your information is safe with us.
+                        </h1>
+                    </div>
+                    <p class="block-title__description">
+                        We don’t share or use ANY previously-unknown content you send us without
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section section--padding-bottom">
+            <div class="section__inner section__inner--center">
+                <h1 class="section__title">Let's get started!</h1>
+                <div class="section__btn-wrapper">
+                    <button class="btn-blue">Submit Tip</button>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__item">
+                <img class="header__img" src="./images/rc.png" alt="rc logo"/>
+            </div>
+            <div class="footer__item">
+                <p class="footer__text">Operated by @ResellCalendar on Twitter</p>
+            </div>
+        </div>
     </footer>
     <script src="./index.js"></script>
 </body>

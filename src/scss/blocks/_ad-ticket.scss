@@ -1,0 +1,57 @@
+.ad-ticket {
+  width: 300px;
+  height: 164px;
+  font-family: PoppinsMedium, sans-serif;
+  padding: 20px 40px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f5f6fb;
+  box-shadow: 12px 15px 40px 0 rgba(181, 208, 244, 0.35);
+  position: relative;
+  
+  &__img-wrapper {
+    position: absolute;
+    top: -13%;
+    left: 9%;
+  }
+
+  &__img {
+    width: 69px;
+    height: 69px;
+    border-radius: 10px;
+  }
+
+  &__inner {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &:first-child {
+      justify-content: flex-end;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    font-family: PoppinsSemibold, sans-serif;
+    font-weight: 700;
+    color: #0c1742;
+    margin-left: auto;
+  }
+
+  &__price {
+    color: #017cf7;
+    font-size: 33px;
+    font-weight: 700;
+    font-family: PoppinsSemibold, sans-serif;
+  }
+
+  &__description {
+    font-size: 15px;
+    color: #697697;
+  }
+}
