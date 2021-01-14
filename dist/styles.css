@@ -704,11 +704,16 @@ body {
   position: absolute;
   top: -13%;
   left: 9%;
+  border: 3px solid #017cf7;
+  border-radius: 7px;
+  width: 69px;
+  height: 69px;
+  background-color: #f5f6fb;
 }
 
 .ad-ticket__img {
-  width: 69px;
-  height: 69px;
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
 }
 
