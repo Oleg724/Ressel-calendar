@@ -19,6 +19,13 @@
     display: flex;
     align-items: center;
 
+    p {
+      font-size: 40px;
+      font-family: 'PoppinsSemiBoldItalic', sans-serif;
+      color: #017ffa;
+      text-transform: uppercase;
+    }
+
     &:nth-child(4) {
       margin-left: auto;
     }
@@ -102,7 +109,7 @@
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 790px) {
   .header {
 
     &__item {
@@ -144,7 +151,7 @@
   }
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 790px) {
   .menu__btn {
     display: none;
   }

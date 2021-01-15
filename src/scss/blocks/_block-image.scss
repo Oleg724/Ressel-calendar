@@ -1,5 +1,26 @@
 .block-image {
+  width: 40%;
+
   &__img {
     width: 100%;
+
+    &--position-absolute {
+      position: absolute;
+      width: 23%;
+      top: 58%;
+      right: 7%;
+      box-shadow: 12px 15px 40px 0 rgba(181, 208, 244, 0.35);
+    }
+  }
+
+  &__inner {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .block-image {
+    width: 80%;
+    margin: 0 auto;
   }
 }

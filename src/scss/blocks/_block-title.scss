@@ -51,7 +51,10 @@
 
   &__description {
     padding-top: 25px;
-    padding-left: 40px;
+
+    &--padding-left {
+      padding-left: 40px;
+    }
   }
 }
 
